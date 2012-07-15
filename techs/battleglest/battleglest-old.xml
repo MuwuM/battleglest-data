@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="no"?>
+
+<tech-tree>
+	<description value="Hero Remake"/>
+	
+	<attack-types>
+		<attack-type name="magie"/>
+		<attack-type name="physik"/>
+		<attack-type name="direkt"/>
+		<attack-type name="creep"/>
+		<attack-type name="tower"/>
+	</attack-types>
+	
+	<armor-types>
+		<armor-type name="keine"/>	
+		<armor-type name="leichte"/>
+		<armor-type name="mittlere"/>
+		<armor-type name="schwere"/>
+		<armor-type name="creep"/>
+<armor-type name="tower"/>		
+	</armor-types>
+	
+	<damage-multipliers>
+		<damage-multiplier attack="magie" armor="keine" value="1"/>	
+		<damage-multiplier attack="magie" armor="leichte" value="0.8"/>
+		<damage-multiplier attack="magie" armor="mittlere" value="0.7"/>
+		<damage-multiplier attack="magie" armor="schwere" value="0.6"/>
+		<damage-multiplier attack="magie" armor="creep" value="1"/>
+		<damage-multiplier attack="magie" armor="tower" value="0.3"/>
+		
+		<damage-multiplier attack="physik" armor="keine" value="1"/>	
+		<damage-multiplier attack="physik" armor="leichte" value="0.5"/>
+		<damage-multiplier attack="physik" armor="mittlere" value="0.25"/>		
+		<damage-multiplier attack="physik" armor="schwere" value="0.1"/>
+		<damage-multiplier attack="physik" armor="creep" value="1"/>
+		<damage-multiplier attack="physik" armor="tower" value="0.2"/>
+		
+		<damage-multiplier attack="direkt" armor="keine" value="1"/>
+		<damage-multiplier attack="direkt" armor="leichte" value="1"/>
+		<damage-multiplier attack="direkt" armor="mittlere" value="1"/>
+		<damage-multiplier attack="direkt" armor="schwere" value="1"/>
+		<damage-multiplier attack="direkt" armor="creep" value="1"/>
+		<damage-multiplier attack="direkt" armor="tower" value="0.5"/>
+		
+		<damage-multiplier attack="tower" armor="keine" value="1.5"/>
+		<damage-multiplier attack="tower" armor="leichte" value="1.5"/>
+		<damage-multiplier attack="tower" armor="mittlere" value="1.5"/>
+		<damage-multiplier attack="tower" armor="schwere" value="1.5"/>
+		<damage-multiplier attack="tower" armor="creep" value="0.2"/>
+		<damage-multiplier attack="tower" armor="tower" value="0"/>
+		
+		<damage-multiplier attack="creep" armor="keine" value="1"/>	
+		<damage-multiplier attack="creep" armor="leichte" value="0.5"/>
+		<damage-multiplier attack="creep" armor="mittlere" value="0.25"/>		
+		<damage-multiplier attack="creep" armor="schwere" value="0.1"/>
+		<damage-multiplier attack="creep" armor="creep" value="1"/>
+		<damage-multiplier attack="creep" armor="tower" value="1"/>
+	</damage-multipliers>
+</tech-tree>

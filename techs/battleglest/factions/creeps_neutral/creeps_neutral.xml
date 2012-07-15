@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		</starting-resources>
+	<starting-units>
+	</starting-units>	
+	<music value="false" />
+</faction>

@@ -1,0 +1,215 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="2468"  regeneration="4"/>
+		<max-ep value="0"  regeneration="0"/>
+		<armor value="50"/>	
+		<armor-type value="iron"/>
+		<sight value="10"/>
+		<time value="80"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="0"/>					
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/guard.bmp"/>
+		<image-cancel path="images/tech_cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/golden_knight_selectb_1.wav"/>
+			<sound path="sounds/golden_knight_selectb_2.wav"/>
+			<sound path="sounds/golden_knight_selectb_3.wav"/>
+			<sound path="sounds/golden_knight_selectb_3.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/golden_knight_act_1.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<skills>
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="50"/>
+			<animation path="models/worker_standing.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+				
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="225"/>
+			<anim-speed value="141"/>
+			<animation path="models/worker_walking_wood.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="120"/>
+			<anim-speed value="120"/>
+			<animation path="models/worker_harversting_wood.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/guard_attack1.wav"/>
+				<sound-file path="sounds/guard_attack2.wav"/>
+				<sound-file path="sounds/guard_attack3.wav"/>
+				<sound-file path="sounds/guard_attack4.wav"/>
+				<sound-file path="sounds/guard_attack5.wav"/>
+				<sound-file path="sounds/guard_attack6.wav"/>
+				<sound-file path="sounds/guard_attack7.wav"/>
+				<sound-file path="sounds/guard_attack8.wav"/>
+				<sound-file path="sounds/guard_attack9.wav"/>
+				<sound-file path="sounds/guard_attack10.wav"/>
+				<sound-file path="sounds/guard_attack11.wav"/>
+				<sound-file path="sounds/guard_attack12.wav"/>
+				<sound-file path="sounds/guard_attack13.wav"/>
+				<sound-file path="sounds/guard_attack14.wav"/>
+			</sound> 
+			<attack-strenght value="230"/>
+			<attack-var value="30"/>
+			<attack-range value="1"/>
+			<attack-type value="physical"/>	
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<attack-start-time value="0"/>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>	
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="models/worker_dying.g3d"/>
+			<sound enabled="false" start-time="0">
+			</sound>
+			<fade value="false"/>
+			<attack-boost name="revenge_me">
+				<allow-multiple-boosts value="false" />
+				<radius value="7"/>
+             	<target value="ally"/>
+				<max-hp value="0" regeneration="10"/>
+				<max-ep value="0"  regeneration="0"/>
+				<sight value="0"/>
+				<attack-strenght value="0"/>
+				<attack-range value="0"/>
+				<armor value="100" value-percent-multiplier="true"/>
+				<move-speed value="25" value-percent-multiplier="true"/>
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="revenge_particles.xml"/>
+				</particles>
+         		</attack-boost>
+		</skill>
+		<skill>
+			<type value="build"/>
+			<name value="build_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="3500"/>
+			<anim-speed value="80"/>
+			<animation path="models/worker_building.g3d"/>
+			<sound enabled="false" start-time="0" />	
+		</skill>
+		<skill>
+			<type value="repair" />
+			<name value="repair_skill" />
+			<ep-cost value="0" />
+			<speed value="80" />
+			<anim-speed value="0" />
+			<animation path="models/worker_walking_loaded.g3d" />
+			<sound enabled="false">
+			</sound>
+			<particles value="true" start-time="0.0"> 
+				<particle-file path="honey.xml"/> 
+			</particles>
+		</skill>
+
+	</skills>
+	
+	<commands>
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="images/tech_move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/guard_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		<command>
+			<type value= "build"/>
+			<name value="beehive"/>
+			<image path="../beehive/images/defense_tower.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+                <building name="beehive"/>		
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="false">						
+			</built-sound>	
+		</command>
+		<command>
+			<type value="repair" />
+			<name value="healing_honey" />
+			<image path="images/tech_hold.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill" />
+			<repair-skill value="repair_skill" />
+			<repaired-units>
+				<unit name="arbol_alma"/>
+				<unit name="arbol_alma_"/>
+				<unit name="bai_zaa"/>
+				<unit name="golden_knight"/>
+				<unit name="met_the_beekeeper"/>
+				<unit name="saurian"/>
+				<unit name="shadow_monk"/>
+				<unit name="xatum"/>
+				<unit name="beehive"/>
+			</repaired-units>
+		</command>
+	</commands>
+</unit>

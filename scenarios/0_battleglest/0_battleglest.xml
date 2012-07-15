@@ -1,0 +1,89 @@
+<?xml version="1.0" standalone="yes" ?>
+<scenario>
+	<maxplayers value="7"/>
+	<difficulty value="3"/>
+	<players>
+	<player control="cpu" faction="creeps" team="1"/>
+	<player control="human" faction="heros" team="1"/>
+	<player control="network" faction="heros" team="1"/>
+	<player control="cpu" faction="creeps_neutral" team="3"/>
+	<player control="cpu" faction="creeps_rot" team="2"/>	
+	<player control="network" faction="heros" team="2"/>	
+	<player control="network" faction="heros" team="2"/>	
+</players>
+	<map value="7_battleglest_3_player" />
+	<tileset value="battleglest_tileset"/>
+	<tech-tree value="battleglest"/>
+	<default-resources value="false"/>
+	<default-units value="false"/>
+	<fog-of-war value="explored"/>
+	<default-victory-conditions value="false"/>
+	<scripts>
+		<global>
+			starttime = 0 --default: 90
+			respawntime = 35 --default: 35
+			healcircles = 1 --default:1
+			creepsPerSpawn = 6 --default: 9
+			creepRange = 16 --default: 16
+			debugLanes = 0 --default: 0
+			debugAI = 0 --default: 0			
+			herosOfPlayersabc = {}
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."player.lua")
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."global.lua")
+		</global>
+		<startup>
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."startup.lua")
+		</startup>
+		<timerTriggerEvent>
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."timerTriggerEvent.lua")
+		</timerTriggerEvent>
+		<unitAttacked>
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."unitAttacked.lua")
+		</unitAttacked>
+		<unitAttacking>
+			--dofile(getSystemMacroValue("$SCENARIO_PATH").."unitAttacking.lua")
+		</unitAttacking>
+		<unitDied>
+			if units[lastDeadUnit()] == nil then else
+				units[lastDeadUnit()]:die()
+				dofile(getSystemMacroValue("$SCENARIO_PATH").."unitDied.lua")
+			end
+		</unitDied>
+		<unitCreatedOfType type="selector_arbol_alma">
+			current_selection = "arbol_alma"
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
+		</unitCreatedOfType>
+		<unitCreatedOfType type="selector_bai_zaa">
+			current_selection = "bai_zaa"
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
+		</unitCreatedOfType>
+		<unitCreatedOfType type="selector_golden_knight">
+			current_selection = "golden_knight"
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
+		</unitCreatedOfType>
+		<unitCreatedOfType type="selector_met_the_beekeeper">
+			current_selection = "met_the_beekeeper"
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
+		</unitCreatedOfType>
+		<unitCreatedOfType type="selector_saurian">
+			current_selection = "saurian"
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
+		</unitCreatedOfType>
+		<unitCreatedOfType type="selector_shadow_monk">
+			current_selection = "shadow_monk"
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
+		</unitCreatedOfType>
+		<unitCreatedOfType type="selector_shyria">
+			current_selection = "shyria"
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
+		</unitCreatedOfType>
+		<unitCreatedOfType type="selector_xatum">
+			current_selection = "xatum"
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
+		</unitCreatedOfType>
+		<unitCreatedOfType type="selected">
+			selecting = 1
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
+		</unitCreatedOfType>
+	</scripts>		
+</scenario>

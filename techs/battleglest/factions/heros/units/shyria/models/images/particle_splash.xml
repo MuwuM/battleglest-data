@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<splash-particle-system>
+    	<texture value="true" path="images/dia.png" luminance="true"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="0" z="0"/>
+	<color red="0.3" green="0" blue="0.8" alpha="1" />
+	<color-no-energy red="0.5" green="0.1" blue="1" alpha="1" />
+    	<size value="0.4" />
+    	<size-no-energy value="0.1" />
+    	<speed value="1.2" />
+	<gravity value="0.1"/>
+    	<emission-rate value="10" />
+    	<energy-max value="70" />
+    	<energy-var value="5" />
+
+	<emission-rate-fade value="1"/>
+	<vertical-spread a="0" b="0"/>
+	<horizontal-spread a="1" b="0"/>
+</splash-particle-system>

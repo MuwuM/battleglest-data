@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<menu>
+	<menu-background-model value="data/core/menu/main_model/menu_main1.g3d"/>
+	<water value="true" height="3"/>
+	<rain value="true"/>
+	<fog value="true" density="0.015"/>
+	<camera>
+		<start-position x="5" y="10" z="40"/>
+		<root-position x="-9" y="11" z="10"/>
+		<about-position x="6" y="8.5" z="11"/>
+		<config-position x="-5" y="8" z="10"/>
+		<info-position x="5" y="6" z="-5"/>
+		<new-game-position x="12" y="17" z="5"/>
+		<connected-game-position x="4" y="10" z="-14"/>
+		<join-game-position x="14" y="15" z="5"/>
+		<masterserver-position x="4" y="10" z="-14"/>
+                <mods-position x="4" y="10" z="-14"/>
+		<scenario-position x="10" y="13" z="2"/>
+		
+		<start-rotation x="0" y="0" z="0"/>
+		<root-rotation x="0" y="-40" z="0"/>
+		<about-rotation x="0" y="-80" z="0"/>
+		<config-rotation x="0" y="-5" z="0"/>
+		<info-rotation x="0" y="25" z="0"/>
+		<new-game-rotation x="0" y="10" z="0"/>
+		<connected-game-rotation x="0" y="70" z="0"/>
+		<join-game-rotation x="0" y="12" z="0"/>
+		<masterserver-rotation x="0" y="-18" z="0"/>
+                <mods-rotation x="0" y="-18" z="0"/>
+		<scenario-rotation x="0" y="-10" z="0"/>		
+	</camera>
+	<intro>
+
+		<intro-time value="47500"/>
+		<appear-time value="1000"/>
+		<show-time value="1500"/>
+		<disappear-time value="1000"/>
+		<menu-music-path value="/menu/music/"/>
+		<menu-intro-music value="intro_music.ogg"/>
+		<menu-music value="menu_music.ogg"/>
+		<show-intro-pictures value="8" random="true" time="2500"/>
+		<show-intro-models value="true" random="true" min-anim-speed="0.010" max-anim-speed="0.6"/>
+<!--
+		<intro-time value="24000"/>
+		<appear-time value="2000"/>
+		<show-time value="1500"/>
+		<disappear-time value="2000"/>
+		<menu-music-path value="/menu/music/"/>
+		<menu-intro-music value="intro_music.ogg"/>
+		<menu-music value="menu_music.ogg"/>
+		<show-intro-pictures value="0" random="false" time="0"/>
+		<show-intro-models value="false" random="false" min-anim-speed="0" max-anim-speed="0"/>
+-->
+
+		<camera>
+			<start-position x="6" y="8.5" z="11"/>
+			<start-rotation x="0" y="-80" z="0"/>
+		</camera>
+
+	</intro>
+</menu>

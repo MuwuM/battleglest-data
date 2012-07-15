@@ -1,0 +1,181 @@
+The following Fonts use this license:
+
+On debian systems please find license information in: 
+/usr/share/common-licenses/GPL
+/usr/share/common-licenses/GPL-2
+/usr/share/common-licenses/GPL-2+
+/usr/share/common-licenses/GPL-3
+/usr/share/common-licenses/GPL-3+
+
+======================================================
+File: DejaVuSansMono.ttf
+Used for languages: Arabic
+
+License
+Fonts are © Bitstream (see below). DejaVu changes are in public domain. Explanation of copyright is on Gnome page on Bitstream Vera fonts. Glyphs imported from Arev fonts are © Tavmjung Bah (see below)
+Bitstream Vera Fonts Copyright
+
+Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc.
+Permission is hereby granted, free of charge, to any person obtaining a copy of the fonts accompanying this license ("Fonts") and associated documentation files (the "Font Software"), to reproduce and distribute the Font Software, including without limitation the rights to use, copy, merge, publish, distribute, and/or sell copies of the Font Software, and to permit persons to whom the Font Software is furnished to do so, subject to the following conditions:
+The above copyright and trademark notices and this permission notice shall be included in all copies of one or more of the Font Software typefaces.
+The Font Software may be modified, altered, or added to, and in particular the designs of glyphs or characters in the Fonts may be modified and additional glyphs or characters may be added to the Fonts, only if the fonts are renamed to names not containing either the words "Bitstream" or the word "Vera".
+This License becomes null and void to the extent applicable to Fonts or Font Software that has been modified and is distributed under the "Bitstream Vera" names.
+The Font Software may be sold as part of a larger software package but no copy of one or more of the Font Software typefaces may be sold by itself.
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL BITSTREAM OR THE GNOME FOUNDATION BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.
+Except as contained in this notice, the names of Gnome, the Gnome Foundation, and Bitstream Inc., shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Font Software without prior written authorization from the Gnome Foundation or Bitstream Inc., respectively. For further information, contact: fonts at gnome dot org.
+Arev Fonts Copyright
+
+Original text
+Copyright (c) 2006 by Tavmjong Bah. All Rights Reserved.
+Permission is hereby granted, free of charge, to any person obtaining a copy of the fonts accompanying this license ("Fonts") and associated documentation files (the "Font Software"), to reproduce and distribute the modifications to the Bitstream Vera Font Software, including without limitation the rights to use, copy, merge, publish, distribute, and/or sell copies of the Font Software, and to permit persons to whom the Font Software is furnished to do so, subject to the following conditions:
+The above copyright and trademark notices and this permission notice shall be included in all copies of one or more of the Font Software typefaces.
+The Font Software may be modified, altered, or added to, and in particular the designs of glyphs or characters in the Fonts may be modified and additional glyphs or characters may be added to the Fonts, only if the fonts are renamed to names not containing either the words "Tavmjong Bah" or the word "Arev".
+This License becomes null and void to the extent applicable to Fonts or Font Software that has been modified and is distributed under the "Tavmjong Bah Arev" names.
+The Font Software may be sold as part of a larger software package but no copy of one or more of the Font Software typefaces may be sold by itself.
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL TAVMJONG BAH BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.
+Except as contained in this notice, the name of Tavmjong Bah shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Font Software without prior written authorization from Tavmjong Bah. For further information, contact: tavmjong @ free . fr.
+
+======================================================
+File: gothub__.ttf
+Used for languages: None (a default)
+
+---------------------------
+
+This package was debianized by Vladimir Shahov <mendoza@avb.bas-net.by> on
+Sun, 29 Aug 2004 14:12:13 +0300.
+
+It was downloaded from http://peoples.org.ru/eng_uralic.html
+
+Upstream Authors: URW++ Design & Development GmbH
+	Valek Filippov <frob@df.ru>,
+	Esa Anttikoski <Esa.Anttikoski@joensuu.fi>
+
+The original fonts were created by URW++, the Cyrillic part by Valek Filippov,
+and were modified by Esa Anttikoski. 
+
+Copyright:
+Uralic is a collection of free TrueType fonts for Uralic languages.
+
+Copyright (C) 2000-2004 URW++ Design & Development GmbH, Valek Filippov, 
+Esa Anttikoski
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful,   
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License 
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+02111-1307, USA.
+
+On Debian systems, the complete text of the GNU General Public License 
+can be found in /usr/share/common-licenses/GPL file.
+
+======================================================
+File: LinBiolinum_RB.ttf
+Used for languages: Almost all (a default)
+
+Family:              Linux Biolinum
+Subfamily:           Regular
+Full name:           Linux Biolinum
+PostScript name:     LinBiolinum
+Version:             Version 0.4.4 
+Unique ID:           FontForge 2.0 : Linux Biolinum : 22-5-2009
+Designer:            Philipp H. Poll
+Designer URL:        http://linuxlibertine.sf.net
+Manufacturer:        Philipp H. Poll
+Vendor URL:          http://linuxlibertine.sf.net
+Copyright:           Linux Libertine by Philipp H. Poll, Open Font under Terms of following Free Software Licenses:
+GPL (General Public License) with font-exception and OFL (Open Font License).
+Created with FontForge (http://fontforge.sf.net) Sept 2003, 2004, 2005, 2006, 2007, 2008
+License URL:         http://www.fsf.org/licenses/gpl.html AND http://scripts.sil.org/OFL
+License Description: GPL- General Public License AND OFL-Open Font License
+
+======================================================
+File: wqy-zenhei.ttc
+Used for languages: Chinese and Japanese
+
+This package was debianized by Zhengpeng Hou <zhengpeng-hou@ubuntu.com> on
+Sat, 1 Dec 2007 16:54:11 +0800.
+
+It was downloaded from http://wqy.sourceforge.net/
+
+Upstream Authors:
+
+    Qianqian Fang <fangq #nmr _mgh _harvard _edu>
+    and The WenQuanYi Project Contributors
+
+Copyright:
+
+    Copyright (C) 2007-2009  Qianqian Fang and The WenQuanYi Project
+                             Board of Trustees, All rights reserved
+
+    This font contains the Latin/Hangul glyphs from un-fonts (UnDotum)
+      http://kldp.net/projects/unfonts/
+        Copyright (C) 1998-2004  Koanughi Un
+
+    The Bopomofo glyphs U3100-U3127 were imported from GPL font
+      cwTeX (cwming.ttf)
+	Copyright (C) 1999, 2004  Tsong-Min Wu, Tsong-Huey Wu.
+        Copyright (C) 2005  Tsong-Min Wu, Tsong-Huey Wu and Edward G.J. Lee.
+
+    Part of the embedded bitmap glyphs were derived from
+      "Firefly bitmap fonts" http://www.study-area.org/apt/firefly-font/
+        Copyright (C) 2004  Firefly
+
+    The mono-spaced Latin glyphs were derived from M+ M2 Light
+      http://mplus-fonts.sourceforge.jp/ 
+        Copyright (C) 2002-2008 M+ FONTS PROJECT
+	License for M+ M2 Light as below
+
+License:
+
+    ** GPL v2 with font embedding exception:
+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+    As a special exception, if you create a document which uses this
+    font, and embed this font or unaltered portions of this font into
+    the document, this font does not by itself cause the resulting
+    document to be covered by the GNU General Public License.  This
+    exception does not however invalidate any other reasons why the
+    document might be covered by the GNU General Public License.  If you
+    modify this font, you may extend this exception to your version of
+    the font, but you are not obligated to do so.  If you do not wish to
+    do so, delete this exception statement from your version.
+
+On Debian systems, the complete text of the GNU General Public License
+version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+The Debian packaging is (C) 2007-2009 ZhengPeng Hou <zhengpeng-hou@ubuntu.com>
+and is licensed under the GPL, see above.
+
+-------------------------------------------------------------------------
+M+ FONTS License
+-------------------------------------------------------------------------
+
+M+ FONTS                     Copyright (C) 2002-2008 M+ FONTS PROJECT
+
+These fonts are free softwares.
+Unlimited permission is granted to use, copy, and distribute it, with
+or without modification, either commercially and noncommercially.
+THESE FONTS ARE PROVIDED "AS IS" WITHOUT WARRANTY.
+
+http://mplus-fonts.sourceforge.jp/
