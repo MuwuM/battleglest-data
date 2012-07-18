@@ -83,6 +83,8 @@ function isAI(faction)
 	--print(string.upper(string.sub(getPlayerName(faction), 1, 8)))
 	if string.upper(string.sub(getPlayerName(faction), 1, 3)) == 'CPU' then
 		result = 1
+	elseif string.upper(string.sub(getPlayerName(faction), 1, 4)) == '*AI*' then
+		result = 1
 	elseif string.upper(string.sub(getPlayerName(faction), 1, 3)) == '???' then
 		result = 2
 	elseif string.upper(string.sub(getPlayerName(faction), 1, 7)) == 'NETWORK' or string.upper(string.sub(getPlayerName(faction), 1, 8)) == 'NETZWERK' then
