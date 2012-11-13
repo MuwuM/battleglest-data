@@ -85,5 +85,8 @@
 			selecting = 1
 			dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
 		</unitCreatedOfType>
+		<cellTriggerEvent>
+			dofile(getSystemMacroValue("$SCENARIO_PATH").."cellTriggerEvent.lua")
+		</cellTriggerEvent>
 	</scripts>		
 </scenario>

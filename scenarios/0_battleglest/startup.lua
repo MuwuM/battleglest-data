@@ -4,7 +4,7 @@ print("----------------- BattleGlest v. "..getVersion().." -----------------")
 addConsoleLangText("startup", getVersion())
 
 if string.gsub(_VERSION, "Lua ", "") < "5.1" then
-	addConsoleLangText("LuaUpdateNeeded",_Version,"Lua 5.1")
+addConsoleLangText("LuaUpdateNeeded",_Version,"Lua 5.1")
 end
 --print("-------------");
 local i = 0
@@ -13,7 +13,7 @@ while i < 7 do
 	disableConsume(i)
 	i = i + 1
 end
-
+setAttackWarningsEnabled(0)
 dofile(getSystemMacroValue("$SCENARIO_PATH").."hero_selector.lua")
 --dofile(getSystemMacroValue("$SCENARIO_PATH").."load_lanes.lua")
 

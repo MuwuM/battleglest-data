@@ -52,35 +52,29 @@ makeBase2:createBase(4,base[2])
 --Heros
 makeHeros = unit:new{}
 makeHeros:createHero(herosOfPlayersabc[1], 1, {regarea[1][1] , regarea[1][2] - 2 })
+--networkSetCameraPositionForFaction(1,regarea[1])
 setCameraPosition(makeHeros:position())
 unit:create("_shop", 1, shop[1])
+networkaddUnitToGroupSelection(1,lastCreatedUnit(),2)
 
 makeHeros = unit:new{}
 makeHeros:createHero(herosOfPlayersabc[2], 2, {regarea[1][1] , regarea[1][2] - 2 })
+--networkSetCameraPositionForFaction(2,regarea[1])
 unit:create("_shop", 2, shop[2])
+networkaddUnitToGroupSelection(2,lastCreatedUnit(),2)
 
 makeHeros = unit:new{}
 makeHeros:createHero(herosOfPlayersabc[5], 5, {regarea[2][1] , regarea[2][2] + 2 })
+--networkSetCameraPositionForFaction(5,regarea[2])
 unit:create("_shop", 5, shop[5])
+networkaddUnitToGroupSelection(5,lastCreatedUnit(),2)
 
 makeHeros = unit:new{}
 makeHeros:createHero(herosOfPlayersabc[6], 6, {regarea[2][1] , regarea[2][2] + 2 })
+--networkSetCameraPositionForFaction(6,regarea[2])
 unit:create("_shop", 6, shop[6])
+networkaddUnitToGroupSelection(6,lastCreatedUnit(),2)
 
--- makeHydra = unit:new{}
--- makeHydra:create('tingorn', 3,{ 178 , 332 })
--- --makeHydra:create('statue', 3,{ 180 , 330 })
--- --makeHydra:create('hydra', 3,{ 180 , 330 })
-
--- makeHydra = unit:new{}
--- makeHydra:create('bug', 3,{ 330 , 180 })
-
--- makeHydra = unit:new{}
--- makeHydra:create('bug', 3,{ 330 , 180 })
--- makeHydra = unit:new{}
--- makeHydra:create('bug', 3,{ 330 , 180 })
--- makeHydra = unit:new{}
--- makeHydra:create('bug', 3,{ 330 , 180 })
 j = 1
 while j <= table.getn(mobs) do
 	makeHydra = unit:new{}
@@ -88,3 +82,11 @@ while j <= table.getn(mobs) do
 	j = j + 1
 end
 displayFormattedLangText ("secleft",tostring(starttime))
+
+i = 1
+while i <= table.getn(portshrine) do
+	createUnitNoSpacing('portal', 3, {portshrine[i][1],portshrine[i][2]})
+	addCellMarker(portshrine[i][4],portshrine[i][3],'',{portshrine[i][1],portshrine[i][2]})
+	teleports[i] = registerCellAreaTriggerEvent({portshrine[i][1]-1,portshrine[i][2]-1,portshrine[i][1]+1,portshrine[i][2]+1})
+	i = i + 1
+end

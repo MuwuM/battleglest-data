@@ -2,7 +2,9 @@
 <tileset>
 	<surfaces>
 		<surface>
-			<texture path="textures/grass.png" prob="1"/>
+			<texture path="textures/grass.png" prob="0.4"/>
+			<texture path="textures/grass2.png" prob="0.25"/>
+			<texture path="textures/grass3.png" prob="0.35"/>
 			<!--<texture path="textures/surface1b.jpg" prob="1"/>
 			
 			<texture path="textures/surface1a.bmp" prob="0.2"/>
@@ -17,26 +19,25 @@
                         <texture path="textures/surface1j.bmp" prob="0.1"/>-->
 		</surface>
 		<surface>
-			<texture path="textures/surface1a.png" prob="0.95"/>
+			<!--<texture path="textures/surface1a.png" prob="0.95"/>
 			<texture path="textures/surface1c.png" prob="0.02"/>
 			<texture path="textures/surface1d.png" prob="0.01"/>
 			<texture path="textures/surface1e.png" prob="0.01"/>
-			<texture path="textures/surface1f.png" prob="0.01"/>
+			<texture path="textures/surface1f.png" prob="0.01"/>-->
+			<texture path="textures/surface5a.png" prob="0.5"/>
+			<texture path="textures/surface5b.png" prob="0.5"/>
 		</surface>
 		<surface>
-			<texture path="textures/surface4a.bmp" prob="1"/>
+			<texture path="textures/surface4a.png" prob="0.2"/>
+			<texture path="textures/surface4b.png" prob="0.2"/>
+			<texture path="textures/surface4c.png" prob="0.6"/>
 		</surface>
 		<surface>
 			<!--<texture path="textures/surface4b.jpg" prob="1.0"/>-->
 			<texture path="textures/surface7.png" prob="1.0"/>
 		</surface>
 		<surface>
-			<texture path="textures/surface5a.bmp" prob="0.3"/>
-			<texture path="textures/surface5b.bmp" prob="0.2"/>
-			<texture path="textures/surface5c.bmp" prob="0.2"/>
-			<texture path="textures/surface5d.bmp" prob="0.1"/>
-			<texture path="textures/surface5e.bmp" prob="0.1"/>
-			<texture path="textures/surface5f.bmp" prob="0.1"/>
+			<texture path="textures/surface6.png" prob="1.0"/>
 		</surface>
 		<surface>
 			<texture path="textures/surface6.png" prob="1"/>
@@ -83,7 +84,9 @@
 			<model path="models/riverside_object5.g3d"/>
 		</object>										
 		<object walkable="true">
-			<model path="models/pentagramm2.g3d"/>
+			<model path="models/none.g3d"><!-- pentagramm2 -->
+				<rotationAllowed value="false"/>
+			</model>
 		</object>					
 		<object walkable="true">
 			<model path="models/swamp_ruin.g3d"/>
@@ -92,12 +95,12 @@
 			<model path="models/swamp_ruin_4.g3d"/>
 		</object>					
 		<object walkable="true">
-			<model path="models/blue.g3d">
+			<model path="models/none.g3d">
 				<rotationAllowed value="false"/>
 			</model>
 		</object>					
 		<object walkable="true">
-			<model path="models/red.g3d">
+			<model path="models/none.g3d">
 				<rotationAllowed value="false"/>
 			</model>
 		</object>					
@@ -117,7 +120,7 @@
 
 	<parameters>
 		<water effects="true">
-			<texture path="textures/water_bg.tga"/>
+			<texture path="textures/surface7-water.png"/>
 			<!--<texture path="textures/water_001.tga"/>
 			<texture path="textures/water_002.tga"/>
 			<texture path="textures/water_003.tga"/>

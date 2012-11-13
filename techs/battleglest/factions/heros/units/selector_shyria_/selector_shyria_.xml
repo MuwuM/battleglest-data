@@ -25,7 +25,7 @@
 		</resource-requirements>
 		<resources-stored>		
 		</resources-stored>
-		<image path="../shyria/images/saurian.png"/>
+		<image path="../shyria/images/icon.bmp"/>
 		<image-cancel path="../selected/x.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="false">

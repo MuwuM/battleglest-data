@@ -178,6 +178,8 @@ function unit:createHero(name, faction, pos)
 	units[self.id] = self
 	table.insert (heros, self.id)
 	self.respawn = 20
-	self:position()
+	networkSetCameraPositionForFaction(faction,self:position())
+	networkselectUnit(faction,self.id)
+	networkaddUnitToGroupSelection(faction,self.id,1)
 end
 

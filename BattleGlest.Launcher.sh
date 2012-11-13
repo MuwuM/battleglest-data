@@ -1,4 +1,6 @@
 #!/bin/sh
+./megaglest --load-mod=\$APPLICATIONPATH/mods/battleglest
+done
 
 if [ "$TERM"'x' = 'xtermx' ]; then xterm -T 'BattleGlest' -n 'BattleGlest'; fi
 thisversion="`cat version.txt`"

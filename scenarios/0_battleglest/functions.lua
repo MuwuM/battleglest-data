@@ -79,13 +79,16 @@ function oppteamfaction(faction)
 end
 
 function isAI(faction)
+	--print(getPlayerName(faction))
 	local result = 0
-	--print(string.upper(string.sub(getPlayerName(faction), 1, 8)))
+	--addConsoleLangText('test',getPlayerName(faction),string.upper(string.sub(getPlayerName(faction), 2, 4)))
 	if string.upper(string.sub(getPlayerName(faction), 1, 3)) == 'CPU' then
 		result = 1
 	elseif string.upper(string.sub(getPlayerName(faction), 1, 4)) == '*AI*' then
 		result = 1
 	elseif string.upper(string.sub(getPlayerName(faction), 1, 3)) == '???' then
+		result = 2
+	elseif string.upper(string.sub(getPlayerName(faction), 2, 4)) == '???' then
 		result = 2
 	elseif string.upper(string.sub(getPlayerName(faction), 1, 7)) == 'NETWORK' or string.upper(string.sub(getPlayerName(faction), 1, 8)) == 'NETZWERK' then
 		result = 3
@@ -140,4 +143,14 @@ function getVersion()
     t = t.."-"..f:read("*line")
     f:close()
 	return t
+end
+function networkaddUnitToGroupSelection(faction,unit,group)
+	if humanFaction() == faction then
+		addUnitToGroupSelection(unit,group)
+	end
+end
+function networkselectUnit(faction,unit)
+	if humanFaction() == faction then
+		selectUnit(unit)
+	end
 end
