@@ -1,0 +1,39 @@
+TUTORIAL_NAME=Tutorial Avanzato
+;message headers
+GlestAdvancedTutorial=Tutorial Avanzato di MegaGlest
+Promoting=Promozione delle Unità
+WellDone=Ben fatto!
+Summoning=Evocazione
+Energy=Energia
+Ritual=Rituale
+Armies=Eserciti
+
+;message strings
+Welcome=Benvenuto al Tutorial Avanzato di MegaGlest, qui imparerai alcune delle funzioni più avanzate del gioco.
+MagicBrief=Hai a disposizione la fazione Magic, che usa la magia per evocare creature in battaglia.
+InitiateBrief=I Novizi sono le unità base della fazione Magic, possono raccogliere risorse e costruire costruzioni.
+InitiatePromotion=I Novizi possono essere promossi a Maghi da Guerra. Per farlo seleziona un Novizio e premi il pulsante "Promuovi a Mago da Guerra".
+BattlemageBrief=I Maghi da Guerra sono i combattenti essenziali, dotati di potenti attacchi a distanza, buona velocità e resistenza.
+EnergyBrief=Generalmente le unità della fazione Magic hanno bisogno di Energia per essere prodotte. L'Energia non è consumata come il Cibo, ma è richiesta solo quando l'unità è creata. L'Energia è prodotta dalle Fonti di Energia.
+EnergyBrief2=Assicurati di avere sempre abbastanza Energia per creare nuove unità.
+SummonedUnitsBrief=L'altra maniera in cui la fazione Magic produce unità è evocandole. Avrai bisogno di un evocatore, e perciò di un Tempio degli Evocatori.
+SummonerBrief=Gli Evocatori possono creare vari tipi di crature, la più semplice delle quali è il demone.
+DaemonBrief=I Demoni sono creature economiche, utili come guerrieri da mischia o come esploratori.
+OtherSummonedCreatures=Gli Evocatori possono creare anche creature avanzate, come le Armature Fantasma e i Draghi, ma richiederanno i giusti avanzamenti.
+GhostArmorRequirements=Le Armature Fantasma richiedono l'aggiornamento Antiche Evocazioni, disponibile presso il Tempio degli Evocatori.
+GhostArmorBrief=Le Armature Fantasma sono unità da mischia, molto potenti se usate per tenere i nemici lontani dai Maghi da Battaglia.
+RitualBrief=I Novizi hanno un secondo comando, chiamato rituale, per generare strutture e anche potenti creature come i Golem. Per ottenere i rituali dovrai prima fondare una Biblioteca.
+GolemBrief=I Golem sono potenti unità difensive, con attacchi poderosi e una buona resistenza, ma possono muoversi solo fintanto che hanno abbastanza punti energia.
+ArmyManagement=Attenzione a produrre troppe unità, potrebbro essere difficili da gestire!
+DoubleClickBrief=Cliccando due volte su una unità puoi selezionare tutte le unità dello stesso tipo che si trovano nelle vicinanze.
+GroupSelectBrief=Puoi definire gruppi di unità selezionando le unità e poi premendo "Control" e un numero. Da quel numero puoi ora richiamare il gruppo.
+FinalMission=Come esame finale, devi costruire un esercito e sconfiggere il tuo nemico.
+
+;objective strings
+PromoteInitiate=Obiettivo: Promuovi un Novizio a Mago di Battaglia.
+ProduceSummoner=Obiettivo: Costruisci un Tempio degli Evocatori, poi produci un Evocatore.
+ProduceDaemon=Obiettivo: Evoca un Demone.
+ProduceGhostArmor=Obiettivo: Ricerca Antiche Evocazioni, poi evoca Armatura Fantasma.
+BuildEnergySource=Obiettivo: Costruisci una Fonte di Energia.
+ProduceGolem=Obiettivo: Costruisci una Biblioteca e poi con un Novizio esegui il rituale per creare un Golem.
+DefeatEnemy=Obiettivo: Costruisci un esercito, scova e sconfiggi il tuo nemico.
