@@ -1,0 +1,212 @@
+<?xml version="1.0" standalone="no"?>
+<unit>
+  <!-- *** parameters *** -->
+  <parameters>
+    <size value="1" />
+    <height value="2" />
+    <max-hp value="1750" regeneration="7" />
+    <max-ep value="500" regeneration="7" />
+    <armor value="15" />
+    <armor-type value="leather" />
+    <sight value="5" />
+    <time value="30" />
+    <multi-selection value="true" />
+    <cellmap value="false" />
+    <levels modHP="4" modEP="8" modSight="0" modArmor="4">
+      <level name="1" kills="200" />
+      <level name="2" kills="400" />
+      <level name="3" kills="700" />
+      <level name="4" kills="1100" />
+      <level name="5" kills="1600" />
+      <level name="6" kills="2200" />
+      <level name="7" kills="2900" />
+      <level name="8" kills="3700" />
+      <level name="9" kills="4600" />
+      <level name="10" kills="5600" />
+      <level name="11" kills="6700" />
+      <level name="12" kills="7900" />
+      <level name="13" kills="9200" />
+      <level name="14" kills="10600" />
+      <level name="15" kills="12100" />
+      <level name="16" kills="13700" />
+      <level name="17" kills="15400" />
+      <level name="18" kills="17200" />
+      <level name="19" kills="19100" />
+      <level name="20" kills="21100" />
+    </levels>
+    <fields>
+      <field value="land" />
+    </fields>
+    <properties />
+    <light enabled="false" />
+    <unit-requirements>
+    </unit-requirements>
+    <upgrade-requirements>
+    </upgrade-requirements>
+    <resource-requirements>
+    </resource-requirements>
+    <resources-stored />
+    <image path="images/saurian.png" />
+    <image-cancel path="images/ice-blue-titi_son-1.png" />
+    <meeting-point value="false" />
+    <selection-sounds enabled="true">
+      <sound path="sounds/cold_is_cool.ogg" />
+      <sound path="sounds/i_love_icecubes.ogg" />
+      <sound path="sounds/are_you_freezing.ogg" />
+      <sound path="sounds/do_you_like_the_chrystal.ogg" />
+    </selection-sounds>
+    <command-sounds enabled="false">
+    </command-sounds>
+  </parameters>
+  <!-- *** skills *** -->
+  <skills>
+    <skill>
+      <type value="stop" />
+      <name value="stop_skill" />
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="40" />
+      <animation path="models/sorcery_stand.g3d" />
+      <animation path="models/sorcery_stand2.g3d" />
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <type value="move" />
+      <name value="move_skill" />
+      <ep-cost value="0" />
+      <speed value="250" />
+      <anim-speed value="180" />
+      <animation path="models/sorcery_move.g3d" />
+      <particles value="true">
+        <!--particle-file path="images/wind_particles.xml"/-->
+      </particles>
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <type value="produce" />
+      <name value="conjure_skill" />
+      <ep-cost value="0" />
+      <speed value="450" />
+      <anim-speed value="40" />
+      <anim-progress-bound value="true" />
+      <animation path="models/sorcery_produce.g3d" />
+      <particles value="true" start-time="0.3" end-time="0.7">
+        <particle-file path="images/rain_particles.xml" />
+      </particles>
+      <sound enabled="false" start-time="0.3">
+        <sound-file path="sounds/conjure1.wav" />
+        <sound-file path="sounds/conjure2.wav" />
+      </sound>
+    </skill>
+    <skill>
+      <type value="die" />
+      <name value="die_skill" />
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="90" />
+      <animation path="models/sorcery_die.g3d" />
+      <sound enabled="false" start-time="0">
+      </sound>
+      <fade value="false" />
+    </skill>
+    <skill>
+      <type value="attack" />
+      <name value="attack_skill" />
+      <ep-cost value="0" />
+      <speed value="150" />
+      <anim-speed value="100" />
+      <animation path="models/sorcery_attack.g3d" />
+      <animation path="models/sorcery_attack2.g3d" />
+      <sound enabled="false" />
+      <attack-strenght value="555" />
+      <attack-var value="33" />
+      <attack-range value="8" />
+      <attack-type value="darkness" />
+      <attack-fields>
+        <field value="land" />
+      </attack-fields>
+      <attack-start-time value="0.55" />
+      <projectile value="true">
+        <particle value="true" path="images/particle_proj.xml" />
+        <sound enabled="false" />
+      </projectile>
+      <splash value="true">
+        <radius value="1" />
+        <damage-all value="true" />
+        <particle value="true" path="images/particle_splash.xml" />
+      </splash>
+    </skill>
+    <skill>
+      <type value="attack" />
+      <name value="attack_ulti" />
+      <ep-cost value="400" />
+      <speed value="150" />
+      <anim-speed value="100" />
+      <animation path="models/sorcery_attack.g3d" />
+      <sound enabled="false" />
+      <attack-strenght value="3500" />
+      <attack-var value="150" />
+      <attack-range value="9" />
+      <attack-type value="darkness" />
+      <attack-fields>
+        <field value="land" />
+      </attack-fields>
+      <attack-start-time value="0.55" />
+      <projectile value="true">
+        <particle value="true" path="images/particle_proj2.xml" />
+        <sound enabled="false" />
+      </projectile>
+      <splash value="true">
+        <radius value="2" />
+        <damage-all value="true" />
+        <particle value="true" path="images/particle_splash2.xml" />
+      </splash>
+    </skill>
+  </skills>
+  <!-- *** commands *** -->
+  <commands>
+    <command>
+      <type value="stop" />
+      <name value="stop" />
+      <image path="images/cancel.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <stop-skill value="stop_skill" />
+    </command>
+    <command>
+      <type value="move" />
+      <name value="move" />
+      <image path="images/move.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+    </command>
+    <command>
+      <type value="attack" />
+      <name value="attack" />
+      <image path="images/attack.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+      <attack-skill value="attack_skill" />
+    </command>
+    <command>
+      <type value="produce" />
+      <name value="rain" />
+      <image path="images/rain.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <produce-skill value="conjure_skill" />
+      <produced-unit name="_rain_diamond" />
+    </command>
+    <command>
+      <type value="attack" />
+      <name value="magic_ball" />
+      <image path="images/ulti.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+      <attack-skill value="attack_ulti" />
+    </command>
+  </commands>
+</unit>

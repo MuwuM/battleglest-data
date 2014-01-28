@@ -1,0 +1,125 @@
+<?xml version="1.0" standalone="no"?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="0"/>
+		<height value="0"/>
+		<max-hp value="1000" regeneration="0"/>
+		<max-ep value="1" regeneration="1"/>
+		<armor value="0"/>
+		<armor-type value="runes"/>				
+		<sight value="0"/>
+		<time value="10"/>
+		<multi-selection value="false"/>
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>
+		<properties>
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="0"/>
+		</resource-requirements>
+		<resources-stored/>		
+		<image path="../_shop/images/relicts.png"/>
+		<image-cancel path="../_shop/images/tech_stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+	</parameters>
+
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="10"/>
+			<animation path="../_shop/models/shop.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
+			<animation path="../_shop/models/none.g3d"/>
+			<sound enabled="false"/>		
+			<fade value="false"/>
+		</skill>
+		<skill>
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="300"/>
+			<animation path="../_shop/models/shop.g3d"/>
+			<sound enabled="false">
+			</sound>
+		</skill>
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="100"/>
+			<animation path="../_shop/models/shop.g3d"/>
+			<sound enabled="false">
+			</sound>
+		</skill>
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>
+			<ep-cost value="0"/>
+			<speed value="3000"/>
+			<anim-speed value="200"/>
+			<animation path="../_shop/models/shop.g3d"/>
+			<sound enabled="false">
+			</sound>
+		</skill>
+	</skills>
+
+	<!-- *** commands *** -->
+	<commands>
+		
+		<command>
+			<type value="morph" />
+			<name value="life_items" />
+			<image path="../_shop/images/life.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<morph-skill value="morph_skill" />
+			<morph-unit name="_shop_life" />
+			<discount value="0" />
+		</command>
+		
+		<command>
+			<type value="morph" />
+			<name value="energy_items" />
+			<image path="../_shop/images/energy.png" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<morph-skill value="morph_skill" />
+			<morph-unit name="_shop_energy" />
+			<discount value="0" />
+		</command>
+		<command>
+			<type value="morph"/>
+			<name value="back"/>
+			<image path="../_shop/images/back.png"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<morph-skill value="morph_skill"/>
+			<discount value="0"/>
+			<morph-unit name="_shop"/>
+		</command>		
+	</commands>
+</unit>

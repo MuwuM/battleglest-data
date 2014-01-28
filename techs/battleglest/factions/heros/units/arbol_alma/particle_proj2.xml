@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" path="images/summoner_particle_proj.bmp" luminance="true"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<offset x="0.7" y="0.9" z="0.4"/>
+	<color red="0.0" green="1.0" blue="0.0" alpha="1.0" />
+	<color-no-energy red="0.0" green="0.4" blue="0.0" alpha="0.5" />
+    	<size value="0.2" />
+    	<size-no-energy value="0.2" />
+    	<speed value="0.0" />
+	<gravity value="0"/>
+    	<emission-rate value="100" />
+    	<energy-max value="30" />
+    	<energy-var value="0" />
+	
+	<trajectory type="spiral">
+		<speed value="50.0"/>
+		<scale value="0.1"/>
+		<frequency value="10"/>
+	</trajectory>
+</projectile-particle-system>

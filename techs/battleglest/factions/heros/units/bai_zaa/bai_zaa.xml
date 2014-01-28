@@ -1,0 +1,260 @@
+<?xml version="1.0" standalone="no"?>
+<unit>
+  <parameters>
+    <size value="2" />
+    <height value="2" />
+    <max-hp value="3500" regeneration="7" />
+    <max-ep value="1000" regeneration="2" />
+    <armor value="110" />
+    <armor-type value="wood" />
+    <sight value="12" />
+    <time value="5" />
+    <multi-selection value="true" />
+    <cellmap value="false" />
+    <levels modSight="0" modHP="8" modEP="4" modArmor="4">
+      <level name="1" kills="200" />
+      <level name="2" kills="400" />
+      <level name="3" kills="700" />
+      <level name="4" kills="1100" />
+      <level name="5" kills="1600" />
+      <level name="6" kills="2200" />
+      <level name="7" kills="2900" />
+      <level name="8" kills="3700" />
+      <level name="9" kills="4600" />
+      <level name="10" kills="5600" />
+      <level name="11" kills="6700" />
+      <level name="12" kills="7900" />
+      <level name="13" kills="9200" />
+      <level name="14" kills="10600" />
+      <level name="15" kills="12100" />
+      <level name="16" kills="13700" />
+      <level name="17" kills="15400" />
+      <level name="18" kills="17200" />
+      <level name="19" kills="19100" />
+      <level name="20" kills="21100" />
+    </levels>
+    <fields>
+      <field value="land" />
+    </fields>
+    <properties />
+    <light enabled="false" />
+    <unit-requirements />
+    <upgrade-requirements />
+    <resource-requirements>
+      <resource name="gold" amount="0" />
+    </resource-requirements>
+    <resources-stored>
+    </resources-stored>
+    <image path="images/archmage.bmp" />
+    <image-cancel path="images/magic_cancel.bmp" />
+    <meeting-point value="false" />
+    <selection-sounds enabled="true">
+      <sound path="sounds/archmage_select1.wav" />
+      <sound path="sounds/archmage_select2.wav" />
+      <sound path="sounds/archmage_select3.wav" />
+      <sound path="sounds/archmage_select4.wav" />
+      <sound path="sounds/archmage_select5.wav" />
+    </selection-sounds>
+    <command-sounds enabled="true">
+      <sound path="sounds/archmage_ack1.wav" />
+      <sound path="sounds/archmage_ack2.wav" />
+      <sound path="sounds/archmage_ack3.wav" />
+      <sound path="sounds/archmage_ack4.wav" />
+      <sound path="sounds/archmage_ack5.wav" />
+      <sound path="sounds/archmage_ack6.wav" />
+      <sound path="sounds/archmage_ack7.wav" />
+    </command-sounds>
+  </parameters>
+  <attack-boosts>
+    <attack-boost name="fearsome">
+      <allow-multiple-boosts value="false" />
+      <radius value="2" />
+      <target value="foe">
+      </target>
+      <max-hp value="0" />
+      <max-ep value="0" />
+      <sight value="0" />
+      <attack-strenght value="-15" value-percent-multiplier="true" />
+      <attack-range value="0" />
+      <armor value="0" />
+      <move-speed value="-5" value-percent-multiplier="true" />
+      <production-speed value="0" />
+      <particles value="true">
+        <affected-particle-file path="fear_particles.xml" />
+      </particles>
+    </attack-boost>
+  </attack-boosts>
+  <skills>
+    <skill>
+      <type value="stop" />
+      <name value="stop_skill" />
+      <ep-cost value="-18" />
+      <speed value="1000" />
+      <anim-speed value="25" />
+      <animation path="models/ent_idle.g3d" />
+      <sound enabled="false" />
+      <attack-boost name="fearsome" />
+    </skill>
+    <skill>
+      <type value="move" />
+      <name value="move_skill" />
+      <ep-cost value="0" />
+      <speed value="200" />
+      <anim-speed value="50" />
+      <animation path="models/ent_walking.g3d" />
+      <sound enabled="false" />
+      <attack-boost name="fearsome" />
+    </skill>
+    <skill>
+      <type value="attack" />
+      <name value="melee_attack" />
+      <ep-cost value="0" />
+      <speed value="40" />
+      <anim-speed value="40" />
+      <animation path="models/ent_melee_attack.g3d" />
+      <sound enabled="false" start-time="0">
+        <sound-file path="sounds/archmage_attack1.wav" />
+      </sound>
+      <attack-strenght value="185" />
+      <attack-var value="25" />
+      <attack-range value="1" />
+      <attack-type value="physical" />
+      <attack-fields>
+        <field value="land" />
+      </attack-fields>
+      <attack-start-time value="0.31" />
+      <projectile value="false">
+      </projectile>
+      <splash value="false">
+      </splash>
+      <attack-boost name="fearsome" />
+    </skill>
+    <skill>
+      <type value="attack" />
+      <name value="siege_attack" />
+      <ep-cost value="50" />
+      <speed value="50" />
+      <anim-speed value="25" />
+      <animation path="models/ent_siege_attack.g3d" />
+      <sound enabled="false" start-time="0.1">
+      </sound>
+      <attack-strenght value="425" />
+      <attack-var value="145" />
+      <attack-range value="8" />
+      <attack-type value="stone" />
+      <attack-start-time value="0.72" />
+      <attack-fields>
+        <field value="land" />
+        <field value="air" />
+      </attack-fields>
+      <projectile value="true">
+        <particle value="true" path="particle_proj.xml" />
+        <sound enabled="false">
+        </sound>
+      </projectile>
+      <splash value="true">
+        <radius value="2" />
+        <damage-all value="false" />
+        <particle value="true" path="particle_splash.xml" />
+      </splash>
+      <attack-boost name="fearsome" />
+    </skill>
+    <skill>
+      <type value="attack" />
+      <name value="ulti_attack" />
+      <ep-cost value="500" />
+      <speed value="50" />
+      <anim-speed value="25" />
+      <animation path="models/ent_special_attack.g3d" />
+      <sound enabled="false" start-time="0.1">
+      </sound>
+      <attack-strenght value="645" />
+      <attack-var value="145" />
+      <attack-range value="7" />
+      <attack-type value="stone" />
+      <attack-start-time value="0.4" />
+      <attack-fields>
+        <field value="land" />
+      </attack-fields>
+      <projectile value="true">
+        <particle value="true" path="particle_proj2.xml" />
+        <sound enabled="false">
+        </sound>
+      </projectile>
+      <splash value="true">
+        <radius value="2" />
+        <damage-all value="false" />
+        <particle value="true" path="particle_splash2.xml" />
+      </splash>
+      <attack-boost name="fearsome" />
+    </skill>
+    <skill>
+      <type value="die" />
+      <name value="die_skill" />
+      <ep-cost value="0" />
+      <speed value="120" />
+      <anim-speed value="50" />
+      <animation path="models/ent_dying.g3d" />
+      <sound enabled="true" start-time="0">
+        <sound-file path="sounds/archmage_die1.wav" />
+        <sound-file path="sounds/archmage_die2.wav" />
+      </sound>
+      <fade value="true" />
+    </skill>
+  </skills>
+  <!-- *** commands *** -->
+  <commands>
+    <command>
+      <type value="stop" />
+      <name value="stop" />
+      <image path="images/magic_stop.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <stop-skill value="stop_skill" />
+    </command>
+    <command>
+      <type value="move" />
+      <name value="gehe" />
+      <image path="images/magic_move.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+    </command>
+    <command>
+      <type value="attack" />
+      <name value="angriff" />
+      <image path="images/archmage_ice_nova.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+      <attack-skill value="melee_attack" />
+    </command>
+    <command>
+      <type value="attack" />
+      <name value="throw_a_stone" />
+      <image path="images/archmage_static_fire.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+      <attack-skill value="siege_attack" />
+    </command>
+    <command>
+      <type value="attack" />
+      <name value="ulti" />
+      <image path="images/ent.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+      <attack-skill value="ulti_attack" />
+    </command>
+    <command>
+      <type value="attack_stopped" />
+      <name value="halte_position" />
+      <image path="images/magic_hold.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <stop-skill value="stop_skill" />
+      <attack-skill value="melee_attack" />
+    </command>
+  </commands>
+</unit>

@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" path="images/dia.png" luminance="true"/>
+    	<model value="true" path="models/attack.g3d"/>
+	<primitive value="quad"/>
+	<offset x="0" y="1.1" z="0.8"/>
+	<color red="0.1" green="0.1" blue="1" alpha="1" />
+	<color-no-energy red="1" green="0.1" blue="0.1" alpha="1" />
+    	<size value="2.2" />
+    	<size-no-energy value="2.2" />
+    	<speed value="3.0" />
+	<gravity value="0.1"/>
+    	<emission-rate value="0.5" />
+	<alternations value="1"/>
+    	<energy-max value="3" />
+    	<energy-var value="0" />
+	
+	<trajectory type="linear">
+		<speed value="16.0"/>
+		<scale value="1"/>
+	</trajectory>
+</projectile-particle-system>
